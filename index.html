@@ -29,10 +29,10 @@
     <script src="redeviatedv2/javascript/redeviated-util.js"></script>
 
 <!--[Link to general assets]-->
-    <link rel="stylesheet" href="../css/common_styles.css"><!--[Link universal style]-->
-    <link rel="stylesheet" href="../css/homenew.css"><!--[Link local style]-->
-    <link rel="stylesheet" href="../css/widget_style.css"><!--[Link widget style]-->
-    <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon.png">
+    <link rel="stylesheet" href="redeviatedv2/css/common_styles.css"><!--[Link universal style]-->
+    <link rel="stylesheet" href="redeviatedv2/css/homenew.css"><!--[Link local style]-->
+    <link rel="stylesheet" href="redeviatedv2/css/widget_style.css"><!--[Link widget style]-->
+    <link rel="icon" type="image/x-icon" href="redeviatedv2/assets/favicon/favicon.png">
   </head>
 
   <body>
@@ -197,7 +197,7 @@
         {id: 'include-journal', file: 'journal-entries/journal_Taking-a-small-break-working-on-a-game.html'}
       ];
       data.forEach(function(widget) {
-        include(document.getElementById(widget.id), '/widgets/' + widget.file);
+        include(document.getElementById(widget.id), 'redeviatedv2/widgets/' + widget.file);
       });
 
       
