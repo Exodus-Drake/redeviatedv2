@@ -1,0 +1,84 @@
+<div class="widget-container">
+<!--=========================================================================-->
+  <div class="widget-header-css"><!--Container for Header bar of Widget-->
+<!--=========================================================================-->
+    <span>
+      <i class="icon icon-journal"></i>Journal History
+      <button id="dropdown">
+        <span id="hide">▼</span>
+        <span id="unhide">▲</span>
+      </button>
+    </span><!--Icon and Name of widget box-->
+    <div class="widget-arrows">
+      <div id="one"><span id="triangle-tiny"/></div>
+      <div id="two"><span id="triangle-big"/></div>
+      <div id="three"><span id="triangle-tiny"/></div>
+    </div>
+
+  </div>
+<!--=========================================================================-->
+  <div class="widget-body-css"><!--Container for Body of Widget-->
+    <div class="widget-journal-history">
+      <div id="history">
+        <ul>
+
+          <li>
+            <span><a href="#include-journal-3">Taking a small break, working on a game</a></span>
+            <span>Feb 14, 2023</span>
+          </li>
+
+          <li>
+            <span><a href="#include-journal-2">Topic: Old Deviantart user account deactivations</a></span>
+            <span>Jan 23, 2023</span>
+          </li>
+
+          <li>
+            <span><a href="#include-journal-1">Devious Journal Entry</a></span>
+            <span>Nov 9, 2022</span>
+          </li>
+
+          <li><span><a href="#">Lorem</a></span></li>
+
+        </ul>
+        <div id="page-navigator">
+          <div class="my-navigation">
+            <span class="simple-pagination-first"></span>
+            <span class="simple-pagination-previous"></span>
+            <span class="simple-pagination-page-numbers"></span>
+            <span class="simple-pagination-next"></span>
+            <span class="simple-pagination-last"></span>
+            <span class="top-of-page"><a href="#">^</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../javascript/jquery-simple-pagination-plugin.js"></script>
+  <script>
+    (function($){
+      $('#history').simplePagination({
+        items_per_page: 20,
+        pagination_container: 'ul',
+        first_content: '<<',
+        previous_content: '<',
+        next_content: '>',
+        last_content: '>>',
+      });
+    })(jQuery);
+  </script>
+  <script>
+    $(document).ready(function(){
+      $("#dropdown").click(function(){
+        $("#history").slideToggle("slow")
+        $("#hide").toggle();
+        $("#unhide").toggle();
+      });
+    });
+  </script>
+  <!--<script>
+    function scrollToTop() {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    };
+  </script>-->
+<!--=========================================================================-->
+</div>

@@ -1,0 +1,140 @@
+/*[Browser customizations]*/
+body::-webkit-scrollbar{
+    width: 12px;               /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track{
+    background: rgb(12, 12, 23);        /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(48, 52, 67);    /* color of the scroll thumb */
+    border-radius: 2px;       /* roundness of the scroll thumb */
+    border: 0px solid rgb(237, 237, 237);  /* creates padding around scroll thumb */
+}
+html{
+    scrollbar-color: #0C0C17 #303443;
+}
+/*[General page style]*/
+body{
+    background-color: #C9D6C5;
+    overflow-x: hidden;
+    margin: 20px;
+    font-family: "Trebuchet MS";
+}
+header{
+    margin: -20px;
+}
+footer{
+    margin: -20px;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+a:active {
+    text-decoration: underline;
+}
+.header-bar{
+    background-image: url("../assets/graphics/header_img.png");
+    height: 59px;
+    image-rendering: pixelated;
+    /*margin: -20px;*/
+    margin-bottom: 20px;
+}
+.footer-bar{
+    background-image: url("../assets/graphics/header_img.png");
+    height: 59px;
+    image-rendering: pixelated;
+    /*margin: -20px;*/
+    margin-top: 20px;
+    transform: scaleY(-1);
+}
+.input-style > p{
+    margin-bottom: 0px;
+}
+.input-style > input{
+    border: 1px solid;
+    border-radius: 5px;
+}
+.details{
+
+}
+.details > dl > dt{
+    float: left;
+}
+.details > dl > dd{
+    position: relative;
+    left: 40px;
+}
+/*[submission style]*/
+.flex-container{
+    display: flex;
+    align-content: flex-end;
+    margin: -20px;
+}
+.flex-left{
+    flex:75%;
+}
+.flex-left-content{
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.flex-right{
+    width: 320px;
+    background: #B0C4AE;
+
+}
+.flex-right-content{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.submission-image{
+
+}
+.submission-image > img{
+    display: block;
+    max-width:900px;
+    max-height:900px;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    position:relative;
+    z-index:-1;
+}
+.submission-title{
+    font-family: "Trebuchet MS";
+    line-height: 20%;
+}
+.submission-summary{
+    padding-top: 20px;
+}
+/*[gallery grid style]*/
+.grid-container{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+}
+.grid-items{
+    text-align: center;
+
+}
+.grid-items > img{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-style: solid;
+    border-width: 1px;
+}
+#mask{
+    background-color:red;
+    z-index:2;
+}

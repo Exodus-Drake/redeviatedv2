@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--[General website information]-->
+    <meta charset="UTF-8">
+    <title>&lt;ReDeviated&gt; Edael's Journals</title>
+    <meta name="author" content="Edael">
+    <meta name="description" content="Reclaim, Rekinde, Reimagine.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="art site, art">
+    <!--[Begin insert discord embed code]-->
+    <meta content="Re:Deviated User Edael" property="og:title" />
+    <meta content="Reclaim, Rekinde, Reimagine." property="og:description" />
+    <meta content="https://redeviated-edael-tb.neocities.org/" property="og:url" />
+    <meta content="https://i.imgur.com/p4HPrYd.png" property="og:image" />
+    <meta content="#7DA07D" data-react-helmet="true" name="theme-color" />
+    <!--[Load general scripts]-->
+    <script
+      src="../javascript/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous">
+    </script>
+    <script src="../javascript/redeviated-util.js"></script>
+
+
+    <!--[Link to general assets]-->
+    <link rel="stylesheet" href="../css/common_styles.css"><!--[Link universal style]-->
+    <link rel="stylesheet" href="../css/journal.css"><!--[Link local style]-->
+    <link rel="stylesheet" href="../css/widget_style.css"><!--[Link widget style]-->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon.png">
+  </head>
+
+  <body>
+    <noscript>We're sorry, but this site requires Javascript enabled to function properly...</noscript>
+<!--[Header bar on top page]-->
+    <header><div class="header-bar"></div></header>
+
+<!--[Profile Header containing username, profile picture, etc]-->
+    <div id="include-profile-header"></div>
+
+    <!--[Profile navibar with tabs, stats, etc]-->
+    <div class="profile-navbar">
+      <div class="profile-stats">
+        <span>WIP</span><br>
+        <!-- FC2 Counter  Starts here -->
+        <span>Current Viewers:</span><script language="javascript" type="text/javascript" src="//counter1.fc2.com/views.php?id=38855575&main=1"></script><noscript><img src="//counter1.fc2.com/counter_now.php?id=38855575&main=1" /></noscript>
+        <!-- FC2 Counter  Ends here -->
+      </div>
+    </div>
+
+<!--[Container for the two columns]-->
+    <div class="container">
+      <div class="include-marquee">
+        <div class="marquee">
+        <!-- to 'widen' the marquee, add more items! -->
+          <div class="scrolling">Page under construction!!! </div>
+          <div class="scrolling">Page under construction!!! </div>
+          <div class="scrolling">Page under construction!!! </div>
+          <div class="scrolling">Page under construction!!! </div>
+          <div class="scrolling">Page under construction!!! </div>
+          <div class="scrolling">Page under construction!!! </div>
+          <div class="scrolling">Page under construction!!! </div>
+          <div class="scrolling">Page under construction!!! </div>
+          <div class="scrolling">Page under construction!!! </div>
+          <div class="scrolling">Page under construction!!! </div>
+
+        </div>
+      </div>
+
+      <div class="flex-container">
+  <!--[Items for the LEFT side of the page, this includes the image submission, summary, and comment section]-->
+        <div class="flex-left"><!--[left column]-->
+          <div class="flex-left-content"><!--[The content in the left column]-->
+
+            <!--[ Includes ]-->
+            <div id="include-journal-3"></div>
+            <div id="include-journal-2"></div>
+            <div id="include-journal-1"></div>
+
+          </div>
+        </div>
+  <!--[Items for the RIGHT side of the page, this includes random images gallery selection, image data, and neoads]-->
+        <div class="flex-right"><!--[Right column]-->
+
+          <div id="include-journal-history"></div><!--[workaround for sticky history]-->
+
+          <div class="flex-right-content"><!--[The content in the right column]-->
+
+            <!--[ Includes ]-->
+            <div id="include-poll"></div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--[Footer bar on bottom page]-->
+    <footer>
+      <div class="footer-bar">
+        <div>
+          <span>Redeviated ⓒ 2022-2023 All rights reserved</span>
+        </div>
+        <div>
+          <span>About us</span>
+          <span> | </span>
+          <span>Help & FAQs</span>
+          <span> | </span>
+          <span>Developers</span>
+          <span> | </span>
+        </div>
+      </div>
+    </footer>
+    <script>
+      $(function(){
+        $("#include-profile-header").load("../widgets/core_header.html");
+        $("#include-marquee").load("../widgets/core_marquee.html");
+        $("#include-journal-history").load("../widgets/journal-entries/core_journal_history.html");
+        $("#include-poll").load("../widgets/widget_poll.html");
+
+        $("#include-journal-3").load("../widgets/journal-entries/journal_Taking-a-small-break-working-on-a-game.html");
+        $("#include-journal-2").load("../widgets/journal-entries/widget_journal.html");
+        $("#include-journal-1").load("../widgets/journal-entries/widget_journal_customskin.html");
+      });
+    </script>
+  </body>
+</html>

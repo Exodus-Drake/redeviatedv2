@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--<?xml-stylesheet type="text/css" href="rss.css"?>-->
+<rss version="2.0">
+
+<channel>
+ <title>&lt;ReDeviated&gt; Edael</title>
+ <description>Updates on new submissions and site changes</description>
+ <language>en-us</language>
+ <link>https://redeviated-edael-tb.neocities.org/</link>
+ <item>
+   <title>ReDeviated is live</title>
+    <description>
+      <![CDATA[
+      <style>
+        html{
+          background-color: rgb(185, 200, 180);
+        }
+        .container{
+          font-family: Verdana;
+          background-color: rgb(185, 200, 180);
+          margin: 0;
+        }
+        .post-head{
+          padding: 8px;
+          padding-top: 4px;
+          padding-bottom: 8px;
+          border: 2px outset rgb(92, 130, 121);
+          border-radius: 5px 20px;
+          background-color: rgb(125, 160, 125);
+          box-shadow: 
+            -3px -8px rgb(92, 133, 112) inset,
+            1px 1px rgb(185, 200, 180) inset,
+            3px 0px 2px rgba(166, 182, 159, 0.5);
+          
+        
+        }
+        .post-head img{
+          height: 32px;
+          border-radius: 5px;
+        }
+        .post-head span{
+          font-size: 20px;
+          font-weight: bold;
+          color: white;
+          text-shadow:
+            0px -2px 0px rgb(57, 90, 81),
+            1px -2px 1px rgb(57, 90, 81),
+            -1px -2px 1px rgb(92, 133, 112);
+          vertical-align: super;
+        }
+        .post-fakebody{
+          margin-inline: 6px;
+          margin-bottom: -64px;
+          background-color: rgb(178, 192, 174);
+          border-left: 2px outset rgb(92, 130, 121);
+          border-radius:0 50% 0 0;
+          height: 64px;
+        }
+        .post-body{
+          margin: 6px;
+          margin-top: 0;
+          padding: 8px 12px 16px 12px;
+          background-color: rgb(215, 226, 211);
+          border: 2px outset rgb(92, 130, 121);
+          border-top: 0px solid transparent;
+          border-radius: 0 0 5px 20px;
+          box-shadow:
+            -3px -8px rgb(178, 192, 174) inset,
+            0px 8px rgb(178, 192, 174) inset,
+            4px -4px 2px rgba(157, 170, 152, 0.3),
+            4px 8px 2px rgba(157, 170, 152, 0.3);
+        }
+      </style>
+      <div class="container">
+        <div class="post-fakebody"></div>
+        <div class="post-head">
+          <img src="https://i.imgur.com/gB1RfHw.png">
+          <span>An RSS feed test</span>
+        </div>
+        <div class="post-body">
+          <p>
+            Howdy, this is a test entry to my RSS feed, it's still not ready for use
+            just yet, but one day it will, and you'd better be subscribed ;)
+            <br><br>
+            Until then, Edael out o/
+          </p>
+          <div style="text-align:right;"><small>by Edael</small></div>
+        </div>
+      </div>
+
+      ]]>
+    </description>
+   <link>https://redeviated-edael-tb.neocities.org/</link>
+ </item>
+</channel>
+</rss>

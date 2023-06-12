@@ -1,0 +1,58 @@
+<div class="widget-container">
+<!--=========================================================================-->
+  <div class="widget-header-css"><!--Container for Header bar of Widget-->
+<!--=========================================================================-->
+    <span><i class="icon icon-webcam"></i>Webcam</span><!--Icon and Name of widget box-->
+    <span id="widget-arrow"></span>
+
+  </div>
+<!--=========================================================================-->
+  <div class="widget-body-css"><!--Container for Body of Widget-->
+    <div id="widget-webcam"></div>
+  </div>
+  <script>
+    // define your images here
+    var images = [
+     "https://media.tenor.com/images/fb61944ef932b230fc6381f49f51f723/tenor.gif",
+      "https://media.tenor.com/tectogwmFaIAAAAC/tf2-sniper.gif",
+      "https://media.tenor.com/Rc1GWDr71WIAAAAC/psyduck.gif",
+      "https://media.tenor.com/AlMCBsD_UDIAAAAC/cry-psyduck.gif",
+      "https://media.tenor.com/_BFechgv9KMAAAAC/pokemon-farfetchd.gif",
+      "https://media.tenor.com/bxVyw5EBAZUAAAAd/pyro-tf2.gif",
+      "https://media.tenor.com/G5AuJWT6f54AAAAC/pokemon-pokwm.gif",
+      "https://media.tenor.com/ntRZRkjP_2MAAAAC/kitten-cat.gif",
+      "https://media.tenor.com/8B6cAy8I_DwAAAAC/gible-mordida.gif",
+      "https://media.tenor.com/_czelfcsVI0AAAAd/shroomish-pokemon.gif",
+      "https://media.tenor.com/GmZzNezfZTwAAAAd/sadshroomish.gif",
+      "https://64.media.tumblr.com/19a8e7022303ac0dffd08cf0ab090ee3/tumblr_p7gg9sRsgX1rd4ymxo1_500.gif",
+      "https://64.media.tumblr.com/06a160a301376a0344c0b82f4efffe85/2a0fa32dd722820b-70/s500x750/58935489e6f440b00f2edbfa9f0743b2d72928bb.gif",
+      "https://media.tenor.com/QzOJ8cTK_hAAAAAC/ducklett-pokemon.gif",
+      "https://media.tenor.com/ws5hLge8GlEAAAAC/golduck-pokemon.gif",
+      "https://media.tenor.com/Z4adaEQmUqkAAAAd/pokemon-fighting.gif",
+      "https://media.tenor.com/wYED_j6aHZMAAAAC/freakingout-pokemon.gif",
+      "https://media.tenor.com/gcPtuKUctIAAAAAC/golduck-angry.gif",
+      "https://media.tenor.com/l4qSFkmEOaIAAAAC/headache-psyduck.gif",
+      "https://media.tenor.com/BsNRK57fACAAAAAC/nice-to-meet-you-hello.gif",
+      "https://media.tenor.com/ye2AITmLyBkAAAAC/golduck-psyduck.gif",
+      "https://media.tenor.com/YZpQUCKOqQ4AAAAC/ralts-pok%C3%A9mon-ralts.gif",
+
+
+      "https://media.tenor.com/G5AuJWT6f54AAAAC/pokemon-pokwm.gif",
+      "https://media.tenor.com/fWdxidHJTuEAAAAC/pkm-pokemon.gif",
+      "https://media.tenor.com/SD850-pZtCMAAAAC/minccino-pokemon.gif",
+      "https://64.media.tumblr.com/8c2f2fdcfaf97ea92961b0bc9e42229f/tumblr_mo1z9yhnb41r8suc9o1_500.gif",
+      "https://64.media.tumblr.com/7d7ecf696229bb489cf46d80f7d437e5/tumblr_o1dhf3Op9W1rsrk2xo1_500.gif",
+      "https://media.tenor.com/FvOZIGWA1fIAAAAC/kecleon-roxo.gif"
+    ];
+
+    // this chooses a random number from all available image indices
+    var randomImage = images[Math.floor(Math.random() * images.length)];
+    console.log(randomImage);
+    // make the URL into a proper image tag
+    var image = "<img src='" + randomImage + "'>";
+    // append to the div
+    document.getElementById("widget-webcam").innerHTML = image;
+
+  </script>
+<!--=========================================================================-->
+</div>

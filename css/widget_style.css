@@ -1,0 +1,683 @@
+
+/*==(Pure CSS widget)=========================================================*/
+.widget-container{
+    margin: 16px;
+    margin-left: 8px;
+    margin-right: 8px;
+
+}
+.widget-header-css{
+    position: relative;
+    padding: 6px;
+    min-height: 30px;
+    border: 2px outset;
+    border-color: var(--color-3);
+    border-radius: 5px 20px 5px 20px;
+    background-color: var(--color-4);
+    background-image: var(--wgt-header-bg-image);
+    box-shadow:
+      -3px -8px var(--color-5) inset,
+      1px 1px var(--color-8) inset,
+      3px 0px var(--color-7);
+    z-index: 1;
+}
+.widget-header-css > span{
+    font: bold var(--font-size-6) var(--font-family-1);
+    color: var(--color-10);
+    text-shadow:
+      0px -2px 0px var(--color-3),
+      1px -2px 1px var(--color-3),
+      -1px -2px 1px var(--color-5);
+}
+.widget-body-css{
+    position: relative;
+    margin: 6px;
+    margin-top: -24px;
+    padding: 16px;
+    padding-top: 42px;
+    padding-bottom: 24px;
+    border: 2px var(--color-6) outset;
+    border-radius: 20px 20px 5px 20px;
+    background-color: var(--color-9);
+    background-image: var(--wgt-body-bg-image);
+    box-shadow:
+      -3px -8px var(--color-11) inset,
+      0px 28px var(--color-11) inset,
+      3px 8px var(--color-14);
+}
+.widget-body-clear{
+    margin: 20px;
+}
+#widget-arrow, #widget-arrow::before, #widget-arrow::after{
+    position: absolute;
+    background-color: var(--color-4);
+    border: 2px solid var(--color-3);
+    border-top: 0.1em solid var(--color-3);
+    border-right: 0.1em solid var(--color-3);
+    border-radius: 14px 50px 14px 0;
+    box-shadow: 2px 0.1em var(--color-5) inset, -0.1em -2px var(--color-5) inset;
+  }
+  #widget-arrow::before, #widget-arrow::after{
+    content: "";
+    width: 8px;
+    height: 8px;
+  }
+  #widget-arrow{
+    width: 12px;
+    height: 12px;
+    transform: rotate(-45deg);
+    top: 33px;
+    left: 28px;
+  }
+  #widget-arrow::before{
+    right: 11px;
+    bottom: 11px;
+  }
+  #widget-arrow::after{
+    left: 11px;
+    top: 11px;
+  }
+/*==(Image border widget (depreciated))=======================================*/
+.widget-header{
+    z-index: 1;
+    position: relative;
+    min-height: 0px;
+    margin: 15px;
+    margin-top: -9px;
+    padding: -220px;
+    border: 36px solid transparent;
+    border-image: url(../assets/graphics/widget_box_head.png) 36 fill;
+    border-image-width: 36px 36px;
+    image-rendering: pixelated;
+}
+.widget-header > div{
+    font-family: Verdana;
+    font-weight: bold;
+    margin-top: -30px;
+    margin-bottom: -30px;
+    color: rgb(239, 249, 234);
+    text-shadow: 0px -2px 1px rgb(57, 90, 81);
+    position: relative;
+    bottom: 15px;
+    left: 4px;
+}
+.widget-body{
+    position: relative;
+    bottom: 42px;
+    min-height: 40px;
+    margin: 15px;
+    margin-bottom: -51px;
+    border: 20px solid transparent;
+    border-image: url(../assets/graphics/widget_box_body.png) 40 fill;
+    border-image-slice: fill;
+    border-image-width: 40px 40px;
+    image-rendering: pixelated;
+}
+.fakemoji{
+    position: relative;
+    top: 40px;
+    right: 32px;
+    box-shadow: none
+    image-rendering: pixelated;
+}
+/*==(Journal Skin)=====================================================*/
+.journal-skin{
+    margin: 4px;
+    margin-bottom: 0px;
+    background: var(--color-1);
+    border: 2px var(--color-3) outset;
+    border-radius: 8px;
+    font-family: var(--font-family-1);
+    color: var(--color-0);
+    line-height: 14px;
+    padding: 16px;
+}
+.journal-skin > article > p{
+  font-family: var(--font-family-2);
+    font-size: var(--font-size-3);
+    line-height: 18px;
+}
+.journal-skin > article > h1{
+    font-size: var(--font-size-5);
+    font-weight: normal;
+    line-height: 24px;
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+.journal-skin > article > h2{
+    font-size: var(--font-size-3);
+    margin: 0px;
+    line-height: 16px;
+    font-weight: normal;
+}
+.journal-skin > article > h3{
+    font-size: var(--font-size-3);
+    font-weight: normal;
+}
+/*.journal-skin > article > h3> span > a::after{
+    display: inline-block;
+    content: "➡";
+    font-size: 16px;
+    transform: rotate(-45deg);
+}*/
+@media (max-width: 800px)/*WIP*/{
+    .journal-skin{margin-top: 26px;}
+}
+.journal-tab{
+
+}
+.journal-tab > h3{
+    text-align: center;
+    margin-bottom: 0px;
+}
+.journal-tab > h2{
+    display: inline;
+    font: bold var(--font-size-3);
+    margin: 0px;
+}
+.journal-tab > #journal-date{
+    float: right;
+    margin-right: 19px;
+    font-weight: bold;
+}
+.journal-tab > a > span:first-child{
+    margin-left: 19px;
+}
+.journal-skin > #commentsection{
+    display: none;
+}
+.journal-skin > #button{
+    text-align: center;
+}
+.journal-skin > #button > button{
+    border: 0px;
+}
+/*==(Custom Journal Skin: Sniny Oshawott)=====================================*/
+.journal-skin-custom{
+    margin: 15px;
+    background: #eced44;
+    border: 20px solid #eced44;
+    border-bottom-width: 1px;
+    border-radius: 8px;
+    font-family: "Kristen ITC";
+    color: #3a7417;
+    line-height: 14px;
+}
+.journal-skin-custom > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-height: 373px;
+    object-fit: contain;
+}
+.journal-skin-custom > p{
+    font-size: 12px;
+    /*line-height: 14px;*/
+}
+.journal-skin-custom > h1{
+    font-size: 12px;
+    font-weight: bold;
+}
+.journal-skin-custom > h2{
+    font-size: 14px;
+}
+.journal-skin-custom > h3{
+    text-align: center;
+    font-size: 12px;
+    margin-top: 12px;
+}
+.journal-skin-custom > h3 > a{
+    font-weight: bold;
+}
+@media (max-width: 800px)/*WIP*/{
+    .journal-skin-custom{margin-top: 26px;}
+}
+/*==(Custom Hex stampbox)=====================================================*/
+.stampbox-hex{
+    display: flex;
+    flex-direction: column;
+}
+.stampbox-hex > div > img{
+    margin-left: 22px;
+    margin-right: 22px;
+    width: 100%;
+    max-height: 56px;
+    max-width: 64px;
+}
+.stampbox-hex > div{
+    display: flex;
+    justify-content: center;
+}
+.stampbox-hex > #row-2, #row-3, #row-4, #row-5{
+    margin-top: -24px;
+}
+/*==(Profile ID)==============================================================*/
+.widget-body-css > .widget-id{
+
+}
+.widget-body-css > .widget-id > img{
+    margin-top: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-radius: 8px;
+}
+.widget-body-css > .widget-id > .description{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.widget-body-css > .widget-id > h1 h2, .description > p{
+    margin: 0px;
+}
+.widget-body-css > .widget-id > h1 h2, .description > .description-imgs{
+    display: flex;
+}
+.widget-body-css > .widget-id > h1 h2, .description > .description-imgs > #duckduck{
+    object-fit: fill;
+    width: 100%;
+    max-height: 160px;
+    max-width: 220px
+}
+.widget-body-css > .widget-id > h1 h2, .description > .description-imgs > #PFQ{
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.widget-body-css > .widget-id > h1 h2, .description > .description-imgs > #PFQ > img{
+    display: flex;
+    width: 100%;
+}
+#pokewalker{
+    height: 215px;
+    width: 215px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.widget-body-css > .widget-id > h1{
+    font-size: var(--font-size-1);
+}
+.widget-body-css > .widget-id > h2{
+    font-size: var(--font-size-6);
+    font-weight: normal;
+}
+.widget-body-css > .widget-id > div > span{
+    font-size: var(--font-size-3);
+    color: var(--color-2);
+}
+.widget-body-css > .widget-id > div > dl{
+    margin: 12px;
+    margin-top: 0px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 0.1px;
+    border-radius: 6px;
+    background: var(--color-10);
+}
+.widget-body-css > .widget-id > div > dl > dt{
+    font: bold var(--font-size-3)
+}
+.widget-body-css > .widget-id > div > dl > dd{
+    margin-left: 0px;
+    margin-bottom: 12px;
+    font-size: var(--font-size-3);
+}
+.widget-body-css > .widget-id > div > button{
+    padding-left: 6px;
+    width: 100%;
+    border: transparent;
+    border-radius: 6px;
+    background: var(--color-10);
+    cursor: pointer;
+    text-align: left;
+}
+.widget-body-css > .widget-id > div > button > span{
+    font: bold var(--font-size-4) var(--font-family-2);
+}
+.widget-body-css > .widget-id > #button{
+    margin-left: 12px;
+    margin-right: 12px;
+    height: 32px;
+}
+.widget-body-css > .widget-id > #panel{
+    display: none;
+}
+.widget-body-css > .widget-id > div > button > span > #expand{
+    display: none;
+}
+/*==(Countdown)===============================================================*/
+.widget-body-css > .widget-countdown{
+
+}
+.widget-body-css > .widget-countdown> div > p {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0px;
+}
+.widget-body-css > .widget-countdown > .timer > div > p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.widget-body-css > .widget-countdown> div > p:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+
+}
+.widget-body-css > .widget-countdown > .timer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.widget-body-css > .widget-countdown > .timer > div{
+    flex-basis: 100px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.widget-body-css > .widget-countdown > #result{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 0px;
+}
+.widget-body-css > .widget-countdown > #result > video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    max-width: 640px;
+    max-height: 340px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*==(Stamps)==================================================================*/
+.widget-stamps{
+/*
+    Each custom marquee needs custom calculations to properly wrap. Calcs are
+    handled via variables here at the top, local to the widget-stamps class.
+
+    Simple calculation for marquee,
+    stamps are 99px with margin left and right of 2, so 4. 99 + 4 = 103, then
+    multiply by number of stamps, so 10 stamps. 103 * 10 = 1030, the width in
+    pixels needed for marquee of 10 stamps to properly cycle, simpler than
+    finding the exact number of pixels for each instance negatives go left,
+    positives go right.
+
+    ;)
+*/
+    --calc-mrqe-pokemon: translateX(calc(-103 * 10px));
+    --calc-mrqe-rpgmakergame: translateX(calc(103 * 11px));
+}
+.widget-body-css > .widget-stamps{
+    text-align: center;
+}
+.widget-body-css > .widget-stamps > h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+    font-size: var(--font-size-3);
+    color: var(--color-2);
+}
+.widget-body-css > .widget-stamps > .marquee2 > .stamp-title{
+    position: absolute;
+    padding: 2px;
+    padding-right: 4px;
+    padding-left: 4px;
+    z-index: 1;
+    background: black;
+    opacity: 0.6;
+    font-size: 14px;
+    color: white;
+}
+.widget-body-css > .widget-stamps > .marquee2 > .left{
+    border-radius: 0px 5px 0px 0px;
+    left: 16px;
+    top: 120px;
+}
+.widget-body-css > .widget-stamps > .marquee2 > .right{
+    border-radius: 5px 0px 0px 0px;
+    right: 16px;
+    top: 184px;
+}
+.marquee2 > div, .marquee2 > div{
+    font-size: 0px;
+}
+.marquee2 > div > span, .marquee2 > div > span{
+    display: inline-block;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.widget-body-css > .widget-stamps > span > a > img{
+    width: 100%;
+    max-width: 99px;
+}
+.widget-body-css > .widget-stamps > .marquee2 > div > span > a> img:hover{
+
+}
+.marquee2 {
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 46vw;
+    margin-bottom: 8px;
+}
+.marquee2 > .scrolling-left {
+    animation: marquee-left 16s linear infinite;
+}
+.marquee2 > .scrolling-right {
+    float: right;
+    animation: marquee-right 16s linear infinite;
+}
+.marquee2 > div:hover, .marquee2 > div:hover{
+    animation-play-state: paused;
+}
+/*Handling for custom marquee sizes*/
+
+@keyframes marquee-left {
+    100%{
+      transform: var(--calc-mrqe-pokemon)
+    }
+}
+@keyframes marquee-right {
+    100%{
+      transform: var(--calc-mrqe-rpgmakergame)
+    }
+}
+@media screen and (width <= 720px) and (orientation: portrait) {
+    .marquee2 {
+        overflow: hidden;
+        white-space: nowrap;
+        max-width: 92vw;
+        margin-bottom: 8px;
+    }
+}
+/*==(Comments)================================================================*/
+.widget-body-clear > .widget-comments{
+
+}
+/*==(Webcam)==================================================================*/
+.widget-body-css > #widget-webcam{
+
+}
+.widget-body-css > #widget-webcam > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 360px;
+    border-radius: 5px;
+}
+/*==(Friends)=================================================================*/
+.widget-body-css > .widget-friends{
+    display: flex;
+}
+.widget-body-css > .widget-friends > span{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.widget-body-css > .widget-friends > span > h1{
+    font-size: var(--font-size-3);
+    color: var(--color-2);
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+.widget-body-css > .widget-friends > span > img{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+.img-fallback{
+    image-rendering: pixelated;
+}
+/*==(Marquee container)=======================================================*/
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    background: url("http://previewcf.turbosquid.com/Preview/2014/08/01__18_43_57/Caution_Stripes_R.jpg68751fbc-427e-422f-8fdf-11e4c5dd3945Larger.jpg");
+    padding-bottom: 2px;
+    user-select: none;
+}
+.marquee > .scrolling {
+    animation: marquee 8s linear infinite;
+    display: inline-block;
+    padding-right: 10px;
+    color: var(--color-1);
+    text-shadow:
+      1px 1px var(--color-0),
+      -1px -1px var(--color-0),
+      1px -1px var(--color-0),
+      -1px 1px var(--color-0);
+    font-size: var(--font-size-6);
+}
+@keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-102%);
+    }
+}
+/*==(Friends)=================================================================*/
+.widget-body-css > .widget-poll{
+
+}
+.widget-body-css > .widget-poll > form > #poll{
+    padding: 2px;
+    width: 415px;
+    font: var(--font-size-4) var(--font-family-1);
+    color: var(--color-0);
+    margin-left: auto;
+    margin-right: auto;
+}
+.widget-body-css > .widget-poll > form > #poll > input{
+    float: left;
+}
+.widget-body-css > .widget-poll > form > #poll > label{
+    float: left;
+    width: 390px;
+}
+/*==(Pokevomit)===============================================================*/
+.widget-pokevomit > .widget-header-css{
+    background: url("https://cur.glitter-graphics.net/pub/3133/3133649e65mhp9vxx.jpg");
+    box-shadow: none;
+    text-align: center;
+}
+.widget-pokevomit > .widget-header-css > span{
+    font-family: "Comic Sans"
+}
+.widget-pokevomit > .widget-header-css > .widget-arrows{
+    display: none;
+}
+.widget-pokevomit > .widget-body-css{
+    background: url("https://web.archive.org/web/20090725001812if_/http://espanol.geocities.com/dbpokemon/universo.gif");
+    box-shadow: none;
+}
+.widget-pokevomit > .widget-body-css > div{
+    text-align: center;
+    color: var(--color-1);
+}
+.widget-pokevomit > .widget-body-css > div > img{
+    width: 100%;
+    max-height: 50px;
+    max-width: 530px;
+}
+/*==(Donation)================================================================*/
+.widget-body-css > .widget-donation > div{
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border: 2px outset rgba(240, 76, 76, 1.0);
+    border-radius: 5px;
+    height: 24px;
+    background: grey;
+    overflow: hidden;
+}
+.widget-body-css > .widget-donation > div > div{
+    position: relative;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 3px;
+    width: 100%;
+    height: 24px;
+    background: orange;
+    left: -4px;
+    border-right: 2px solid rgba(240, 76, 76, 1.0);
+}
+.widget-body-css > .widget-donation > div > div > span{
+    display: inline-block;
+    padding-top: 5px;
+    font: bold var(--font-size-4) var(--font-family-1);
+    color: var(--color-1);
+    text-align: right;
+    overflow: hidden;
+    width: 100%;
+}
+.widget-body-css > .widget-donation > span:nth-child(3){
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/*#comments_list div[id*="replies"]:not(:nth-child(1)){
+    position: absolute;
+    bottom: 0px !important;
+}*/
+/*.widget-body-css > .progress-bar{
+    display: block;
+    position: relative;
+
+}
+.widget-body-css > .progress-bar > span{
+    font: bold var(--font-size-4) var(--font-family-1);
+    padding-left: 4px;
+    position: absolute;
+    display: inline-block;
+    color: var(--color-1);
+    text-align: right;
+    top: 5px;
+
+}
+.widget-body-css > .progress-bar > progress{
+    border: 2px outset rgba(206, 85, 85, 1.0);
+    border-radius: 5px;
+    width: 100%;
+    height: 24px;
+    background: grey;
+
+}
+.widget-body-css > .progress-bar > progress::-webkit-progress-bar {
+
+}
+.widget-body-css > .progress-bar > progress::-webkit-progress-value {
+
+}
+.widget-body-css > .progress-bar > progress::-moz-progress-bar {
+    background: orange;
+    border-radius: 3px;
+}*/
+/*==(Animations)==============================================================*/

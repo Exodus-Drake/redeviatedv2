@@ -1,0 +1,73 @@
+<!--[Profile header with profile name, icon, etc]-->
+    <div class="profile-header">
+      <div class="profile-id">
+        <img src="https://i.imgur.com/gB1RfHw.png">
+        <div>
+          <h1>Edael</h1>
+          <h2>Let there be DUCKS!</h2>
+        </div>
+
+
+      </div>
+      <div class="profile-navtabs">
+        <a href="/"><span><i class="icon icon-id"></i>Profile</span></a>
+        <a href="#"><span style="color: gray;"><i class="icon icon-portrait"></i>Gallery</span></a>
+        <a href="#"><span style="color: gray;"><i class="icon icon-sparkle"></i>Favorites</span></a>
+        <a href="/pages/journal"><span><i class="icon icon-journal"></i>Journals</span></a>
+        <a href="#"><span style="color: gray;"><i class="icon icon-shrine"></i>Shrines</span></a>
+      </div>
+
+      <div class="profile-rss">
+        <!--<a href="../rss.xml">
+        <img src="https://www.w3schools.com/xml/pic_rss.gif" width="36" height="14">
+        </a>-->
+        <input type="text" value="https://redeviated-edael-tb.neocities.org/rss.xml" id="RSS">
+        <button onclick="CopyRSS()">
+          <i class="icon icon-rss"></i>
+          <span>+Watch me
+            <span id="tooltip">Copied to Clipboard!!!</span>
+          </span>
+
+
+        </button>
+
+        <input type="text" value="https://redeviated-edael-tb.neocities.org/rss.xml" id="Note">
+        <button onclick="SendNote()">
+          <i class="icon icon-paper"></i>
+          <span style="color: gray;">Send a Note
+          </span>
+        </button>
+
+        <script>
+          function CopyRSS() {
+            // Get the text field
+            var copyText = document.getElementById("RSS");
+
+            // Select the text field
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // For mobile devices
+
+            // Copy the text inside the text field
+            navigator.clipboard.writeText(copyText.value);
+
+            // Alert the copied text
+            //alert("Copied the text: " + copyText.value);
+          }
+          function SendNote() {
+            // Get the text field
+            var copyText = document.getElementById("Note");
+
+            // Select the text field
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // For mobile devices
+
+            // Copy the text inside the text field
+            navigator.clipboard.writeText(copyText.value);
+
+            // Alert the copied text
+            //alert("Copied the text: " + copyText.value);
+            // When the user clicks on div, open the popup
+          }
+        </script>
+      </div>
+    </div>

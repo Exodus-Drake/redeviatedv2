@@ -1,0 +1,161 @@
+.profile-navtabs > a:nth-child(4){
+    background-color: var(--color-10);
+    border: 2px var(--color-6) outset;
+    border-radius: 6px 6px 0px 0px;
+    border-bottom: transparent;
+}
+.profile-navtabs > a:not(:nth-child(4)):hover{
+    background-color: var(--color-10);
+    border-bottom: 2px var(--color-6) solid;
+    border-radius: 6px 6px 0px 0px;
+}
+/*[Columns]*/
+.flex-container{
+    display: flex;
+    flex-direction: row;
+}
+.flex-left{
+    flex:66.6%;
+}
+.flex-right{
+    flex:33.3%;
+}
+@media screen and (width <= 720px) and (orientation: portrait) {
+    .flex-container{flex-direction: column;}
+    .flex-left{width: 100%;}
+    .flex-right{width: 100%;}
+}
+.profile-stats{
+    line-height: 14px;
+}
+.profile-stats > span{
+    margin-left: 6px;
+    color: var(--color-0);
+}
+.journal-tab > h3{
+    display: none;
+}
+
+#include-journal-history{
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+/*==============================================================================
+                              journal history
+==============================================================================*/
+.widget-journal-history > #history > ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    margin-left: -8px;
+    margin-right: -8px;
+    font-size: var(--font-size-3);
+}
+.widget-journal-history > #history > ul > li{
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+.widget-journal-history > #history > ul > li > span > a{
+    white-space: nowrap;
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.widget-journal-history > #history > ul > li:nth-child(even){
+    background: var(--color-8);
+    border-radius: 5px;
+}
+.widget-journal-history > #history > ul > li > span:nth-child(2){
+    float: right;
+}
+.widget-journal-history > #history .my-navigation{
+    margin-top: 16px;
+}
+.my-navigation > span > a:hover{
+    transform: translateY(-12px);
+}
+.widget-journal-history > #history .my-navigation > span:not(.simple-pagination-page-numbers, .top-of-page){
+    position: relative;
+    top: 1px;
+    border: 2px var(--color-3) outset;
+    padding: 1px;
+    padding-left: 4px;
+    padding-right: 4px;
+    box-shadow:
+      -2px -2px var(--color-5) inset,
+      0px 1px var(--color-1) inset,
+      2px 2px var(--color-11);
+    font-size: var(--font-size-2);
+}
+.widget-journal-history > #history .my-navigation > span >
+.simple-pagination-navigation-page{
+    border: 2px var(--color-3) outset;
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-right: 5px;
+    box-shadow:
+      -2px -2px var(--color-11) inset,
+      0px 1px var(--color-1) inset,
+      2px 2px var(--color-11);
+}
+.my-navigation > span:nth-child(2), .my-navigation > span:nth-child(4),
+.my-navigation > span > .simple-pagination-navigation-page{
+    border-radius: 2px;
+}
+.widget-journal-history > #history .my-navigation >
+span.simple-pagination-page-numbers > a:nth-last-child(1){
+    margin-right: 0px;
+}
+.widget-journal-history > #history .my-navigation > span:nth-child(1){
+    border-radius: 9px 2px 2px 9px;
+    letter-spacing: -4px;
+    padding-right: 8px;
+}
+.widget-journal-history > #history .my-navigation > span:nth-child(5){
+    border-radius: 2px 9px 9px 2px;
+    letter-spacing: -4px;
+    padding-right: 8px;
+}
+.widget-journal-history > #history .my-navigation >
+span.simple-pagination-page-numbers > .simple-pagination-navigation-disabled{
+    background: var(--color-1);
+}
+.widget-journal-history .top-of-page{
+    float: right;
+    font-size: var(--font-size-5);
+}
+#dropdown{
+    float: right;
+    margin-right: 4px;
+    border: 2px var(--color-6) outset;
+    border-radius: 5px;
+    background: var(--color-9);
+    box-shadow:
+      -2px -2px var(--color-7) inset,
+      0 4px var(--color-5),
+      2px 4px var(--color-6);
+    transition-duration: 0.1s;
+}
+#dropdown:hover{
+    background-color: var(--color-10);
+    box-shadow:
+      -2px -2px var(--color-11) inset,
+      0 4px var(--color-5),
+      2px 4px var(--color-6);
+}
+#dropdown:active:hover{
+    border: 2px var(--color-6) inset;
+    transform: translateY(2px);
+    background-color: var(--color-13);
+    box-shadow:
+      2px 2px var(--color-12) inset,
+      0 2px var(--color-5),
+      0px 2px var(--color-6);
+}
+#unhide{
+    display: none;
+}

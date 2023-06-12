@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--[General website information]-->
+    <meta charset="UTF-8">
+    <title>"Painter's Wistful Lunasol" by Edael</title>
+    <meta name="author" content="Edael">
+    <meta name="description" content="Reclaim, Rekinde, Reimagine.">
+    <meta name="keywords" content="art site, art">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <!--[Begin insert discord embed code]-->
+    <meta content="Re:Deviated User Edael" property="og:title" />
+    <meta content="Reclaim, Rekinde, Reimagine." property="og:description" />
+    <meta content="https://redeviated-edael-tb.neocities.org/" property="og:url" />
+    <meta content="https://i.imgur.com/p4HPrYd.png" property="og:image" />
+    <meta content="#7DA07D" data-react-helmet="true" name="theme-color" />
+    <!--<meta name="twitter:card" content="summary_large_image">-->
+    <!--[Load general scripts]-->
+     <!--<script src="../scripts/jquery-3.3.1.js"></script>
+     <script src="../scripts/config.js"></script>-->
+     <script>
+     // Page Config
+       $(function(){
+         var date_submitted = "‎September ‎5, ‎2022";               // Create element with HTML
+         var file_size = "228 KB";
+         var file_Resolution = "1980 x 1980";
+
+         $("#date_submitted").append(date_submitted);      // Append the new elements
+         $("#file_size").append(file_size);      // Append the new elements
+         $("#file_Resolution").append(file_Resolution);      // Append the new elements
+       });
+     </script>
+     <script type="text/javascript">
+     document.addEventListener('visibilitychange', function (event) {
+        if (document.hidden) {
+            document.getElementById("img").style.filter = "blur(18px)";
+        } else {
+            document.getElementById("img").style.filter = "blur(0px)"
+        }
+      });
+      window.addEventListener('blur', function (event) {
+          document.getElementById("img").style.filter = "blur(18px)";
+      });
+      window.addEventListener('focus', function (event) {
+          document.getElementById("img").style.filter = "blur(0px)"
+      });
+     </script>
+    <!--[Link to general assets]-->
+    <link rel="stylesheet" href="../css/submission.css">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon.png">
+  </head>
+  <body>
+    <header>
+      <div class="header-bar"></div>
+    </header>
+    <div class="flex-container">
+<!--[Items for the LEFT side of the page, this includes the image submission, summary, and comment section]-->
+      <div class="flex-left"><!--[left column]-->
+        <div class="flex-left-content"><!--[The content in the left column]-->
+          <div class="submission-image">
+            <img id="img" src="https://pbs.twimg.com/media/Fb_zFcpX0AIn_27?format=png&name=large">
+          </div>
+          <div class="submission-title">
+            <p id="profile_pic">Doodle Kaboodle #001</p>
+          </div>
+          <div class="submission-summary">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+              in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="">
+            <iframe src="https://www3.cbox.ws/box/?boxid=3521586&boxtag=SekT6x" width="100%" height="768" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+          </div>
+        </div>
+      </div>
+<!--[Items for the RIGHT side of the page, this includes random images gallery selection, image data, and neoads]-->
+      <div class="flex-right"><!--[Right column]-->
+        <div class="flex-right-content"><!--[The content in the right column]-->
+
+          <div class="">
+            <iframe width="300" height="250" style="border:none" src="https://googol.neocities.org/neolink/embed.html" name="neolink"></iframe>
+          </div>
+
+          <p>More by <a id="profile_name" href="https://www.w3schools.com"></a></p><!--[(id="profile_name") appends username to end of content of <p>]-->
+          <div class="grid-container">
+            <div class="grid-items"><img src="../assets/gallery/flipnote.png"></div>
+            <div class="grid-items"><img src="../assets/gallery/pfp2.png"></div>
+            <div class="grid-items"><img src="../assets/gallery/Pikiko2.png"></div>
+            <div class="grid-items"><img src="../assets/gallery/pwl.png"></div>
+            <div class="grid-items"><img src="../assets/gallery/flipnote.png"></div>
+            <div class="grid-items"><img src="../assets/gallery/flipnote.png"></div>
+            <div class="grid-items"><img src="../assets/gallery/flipnote.png"></div>
+            <div class="grid-items"><img src="../assets/gallery/flipnote.png"></div>
+            <div class="grid-items"><img src="../assets/gallery/flipnote.png"></div>
+            <div class="grid-items"><img src="../assets/gallery/flipnote.png"></div>
+            <div class="grid-items"><img src="../assets/gallery/pfp2.png"></div>
+            <div class="grid-items"><img src="../assets/gallery/Pikiko2.png"></div>
+            <div class="grid-items"><img src="../assets/gallery/pwl.png"></div>
+            <div class="grid-items"><img src="../assets/gallery/flipnote.png"></div>
+            <div class="grid-items"><img src="../assets/gallery/flipnote.png"></div>
+            <div class="grid-items"><img src="../assets/gallery/flipnote.png"></div>
+            <div class="grid-items"><img src="../assets/gallery/flipnote.png"></div>
+            <div class="grid-items"><img src="../assets/gallery/flipnote.png"></div>
+          </div>
+
+          <div class="details">
+            <p>Details</p>
+            <dl>
+              <dt>Submitted on</dt>
+              <dd id="date_submitted"></dd>
+              <dt>Image Size</dt>
+              <dd id="file_size"></dd>
+              <dt>Resolution</dt>
+              <dd id="file_Resolution"></dd>
+            </dl>
+          </div>
+
+          <div class="input-style">
+            <p>Link</p>
+            <input type="text" name="" value="test">
+            <p>Thumb</p>
+            <input type="text" name="" value="test">
+            <p>Embed</p>
+            <input type="text" name="" value="test">
+          </div>
+
+          <div class="">
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-bar"></div>
+    </footer>
+  </body>
+</html>

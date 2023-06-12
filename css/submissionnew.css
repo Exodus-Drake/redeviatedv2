@@ -1,0 +1,108 @@
+#page-content{
+    padding: 6px 16px;
+}
+#media-container,
+#description-comment-container,
+#meta-media-column{
+    margin-block: 12px;
+}
+/*=[ Container for the actual art for the page along with tools ]=*/
+#media-container{
+    margin-right: 340px;
+}
+#media-container > div:nth-child(1){
+    min-height: 200px;
+    text-align: center;
+    /*position: relative;
+    left: 50%;
+    transform: translateX(-50%);*/
+}
+#media-container > div:nth-child(1) img{
+    max-width: 800px;
+}
+/*=[ Container for art title, author, desc, and comment section ]=*/
+#description-comment-container{
+    margin-right: 340px;
+}
+#description-comment-container #pfp-img{
+    margin-right: 12px;
+    width: 64px;
+    height: 64px;
+    float: left;
+    border-radius: 5px;
+    border-right: 2px var(--color-5) outset;
+    box-shadow: 3px 4px var(--color-14);
+    border-bottom: 2px var(--color-5) outset;
+}
+#description-comment-container #title-infos div{
+    font-family: var(--font-family-1);
+}
+#description-comment-container #title-infos > div:nth-child(1){
+    margin-bottom: 16px;
+}
+#description-comment-container #title-infos #title{
+    font-size: var(--font-size-5);
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+#description-comment-container #title-infos #autor{
+    font-weight: bold;
+}
+#description-comment-container #title-infos #categories{
+    font-family: var(--font-family-2);
+    font-size: var(--font-size-4);
+    color: var(--color-2);
+}
+/*=[ Container for all the recommended art, neolinks, and meta of the art ]=*/
+#meta-media-column{
+    float: right;
+    width: 300px;
+}
+/*#meta-media-column #rand-art table{
+    width: 100%;
+    object-fit: cover;
+    border-collapse: collapse;
+}
+#meta-media-column #rand-art table td{
+    padding: 0;
+}
+#meta-media-column #rand-art img{
+    width: 100%;
+}*/
+#meta-media-column #rand-art div:nth-child(2){
+    background: var(--color-10);
+    border: 2px var(--color-14) outset;
+    border-radius: 5px;
+}
+#meta-media-column #rand-art #rand-grid div,
+#meta-media-column #rand-art div > #rand-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+#meta-media-column #rand-art div > #rand-grid{
+    padding: 8px;
+    gap: 8px;
+}
+#meta-media-column #rand-art #rand-grid > div{
+    border: 2px var(--color-5) outset;
+    border-radius: 5px;
+}
+#meta-media-column #rand-art #rand-grid > .grid-item-big{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+#meta-media-column #rand-art #rand-grid > .grid-item-small{
+    
+}
+#meta-media-column #rand-art #rand-grid img{
+    width: 100%;
+    border-radius: 5px;
+}
+#meta-media-column #share-media{
+
+}
+#meta-media-column #img-meta div div span:nth-child(3n+1){
+    display: inline-block;
+    width: 100px;
+    
+}

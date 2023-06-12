@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--[General website information]-->
+    <meta charset="UTF-8">
+    <title>Edael on Re:Deviated</title>
+    <meta name="author" content="Edael">
+    <meta name="description" content="Reclaim, Rekinde, Reimagine.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="art site, art">
+    <!--[Begin insert discord embed code]-->
+    <meta content="Re:Deviated User Edael" property="og:title" />
+    <meta content="Reclaim, Rekinde, Reimagine." property="og:description" />
+    <meta content="https://redeviated-edael-tb.neocities.org/" property="og:url" />
+    <meta content="https://i.imgur.com/p4HPrYd.png" property="og:image" />
+    <meta content="#7DA07D" data-react-helmet="true" name="theme-color" />
+    <!--[Load general scripts]-->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+    </script>
+    <script>
+      $(function(){
+      $("#include-profile-header").load("../widgets/core_header.html");
+      $("#include-marquee").load("../widgets/core_marquee.html");
+      $("#include-identity").load("../widgets/widget_identity.html");
+      $("#include-journalcustom").load("../widgets/widget_journal_customskin.html");
+      $("#include-countdown").load("../widgets/widget_countdown.html");
+      $("#include-stamps").load("../widgets/widget_stamps.html");
+      $("#include-comments").load("../widgets/widget_comments.html");
+      $("#include-webcam").load("../widgets/widget_webcam.html");
+      $("#include-friends").load("../widgets/widget_friends.html");
+      $("#include-poll").load("../widgets/widget_poll.html");
+      $("#include-basecss4, #include-basecss5, #include-basecss6").load("../widgets/widget_base_purecss.html");
+      });
+    </script>
+
+    <!--[Link to general assets]-->
+    <link rel="stylesheet" href="../css/common_styles.css"><!--[Link universal style]-->
+    <link rel="stylesheet" href="../css/homenew.css"><!--[Link local style]-->
+    <link rel="stylesheet" href="../css/widget_style.css"><!--[Link widget style]-->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon.png">
+  </head>
+
+  <body>
+    <noscript>We're sorry, but this site requires Javascript enabled to function properly...</noscript>
+<!--[Header bar on top page]-->
+    <header><div class="header-bar"></div></header>
+
+<!--[Profile Header containing username, profile picture, etc]-->
+    <div id="include-profile-header"></div>
+
+    <!--[Profile navibar with tabs, stats, etc]-->
+    <div class="profile-navbar">
+      <div class="profile-stats">
+        <span>WIP</span><br>
+        <span>Last Updated: </span><span id="lastupdate"></span><br>
+        <span id="hitcount"></span><span id="pageviews"> Pageviews</span>
+      </div>
+    </div>
+
+<!--[Container for the two columns]-->
+    <div class="container">
+      <div class="include-marquee">
+        <div class="marquee">
+        <!-- to 'widen' the marquee, add more items! -->
+          <div class="scrolling">Page under construction!!! </div>
+          <div class="scrolling">Page under construction!!! </div>
+          <div class="scrolling">Page under construction!!! </div>
+          <div class="scrolling">Page under construction!!! </div>
+          <div class="scrolling">Page under construction!!! </div>
+          <div class="scrolling">Page under construction!!! </div>
+          <div class="scrolling">Page under construction!!! </div>
+          <div class="scrolling">Page under construction!!! </div>
+          <div class="scrolling">Page under construction!!! </div>
+          <div class="scrolling">Page under construction!!! </div>
+
+        </div>
+      </div>
+
+      <div class="flex-container">
+  <!--[Items for the LEFT side of the page, this includes the image submission, summary, and comment section]-->
+        <div class="flex-left"><!--[left column]-->
+          <div class="flex-left-content"><!--[The content in the left column]-->
+
+            <!--[ Includes ]-->
+            <div id="include-webcam"></div><!--[Base Widget insert]-->
+            <div id="include-countdown"></div><!--[Base Widget insert]-->
+            <div id="include-journalcustom"></div><!--[Journal Widget insert]-->
+            <div id="include-stamps"></div><!--[Base Widget insert]-->
+            <div id="include-basecss4"></div><!--[Base Widget insert]-->
+            <div id="include-basecss6"></div><!--[Base Widget insert]-->
+
+          </div>
+        </div>
+  <!--[Items for the RIGHT side of the page, this includes random images gallery selection, image data, and neoads]-->
+        <div class="flex-right"><!--[Right column]-->
+          <div class="flex-right-content"><!--[The content in the right column]-->
+
+            <!--[ Includes ]-->
+            <div id="include-friends"></div><!--[Base Widget insert]-->
+            <div id="include-poll"></div><!--[Base Widget insert]-->
+            <div id="include-identity"></div><!--[Base Widget insert]-->
+            <div id="include-comments"></div><!--[Base Widget insert]-->
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--[Footer bar on bottom page]-->
+    <footer><div class="footer-bar"></div></footer>
+    <script>
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+              var site_data = JSON.parse(this.responseText);
+              var num_arr = site_data.info.views.toString().split("");
+              var num_str = "";
+              for (i = 0; i < num_arr.length; i++) {
+                  num_str += num_arr[i];
+                  if ( (num_arr.length-1 - i) % 3 == 0 && (num_arr.length-1 - i) != 0 ) {num_str += ",";}
+                  var date_str = site_data.info.last_updated;
+                  var date_obj = new Date(site_data.info.last_updated);
+                  document.getElementById("lastupdate").innerHTML = (date_obj.getMonth()+1) + "-" + date_obj.getDate() + "-" + date_obj.getFullYear();
+              }
+              document.getElementById("hitcount").innerHTML = num_str;
+          }
+      };
+      xhttp.open("GET", "https://weirdscifi.ratiosemper.com/neocities.php?sitename=redeviated-edael-tb", true);
+      xhttp.send();
+    </script>
+  </body>
+</html>
